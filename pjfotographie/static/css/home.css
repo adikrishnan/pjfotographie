@@ -1,0 +1,19 @@
+html{
+    background-color: #000000;
+    font-family: 'Titillium Web', sans-serif;
+}
+.photo-section{
+    height: 600px;
+}
+#home{
+    background: url('/static/images/cover.jpg') center center no-repeat;
+    background-size: cover;
+}
+#wedding{
+    background: url('/static/images/cover2.jpg') center center no-repeat;
+    background-size: cover;
+}
+#pre-wedding{
+    background: url('/static/images/cover1.jpg') center center no-repeat;
+    background-size: cover;
+}
