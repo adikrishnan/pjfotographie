@@ -5,7 +5,7 @@
 .uk-navbar-nav>li>a{
     font-family: 'Titillium Web', sans-serif;
 }
-#site-nav-scroll{
+.site-nav-scroll-fixed{
     position: fixed;
     top: 0px;
     left: 0px;
