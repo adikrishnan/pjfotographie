@@ -1,4 +1,21 @@
 {% extends "base.html" %}
 {% block title %}Patrick Joseph Photography{% endblock %}
+{% block styles %}
+<link rel="stylesheet" type="text/css" href="/static/css/about.css">
+{% endblock %}
 {% block content %}
+<div class="uk-container uk-container-center uk-margin-large">
+  <div class="uk-grid uk-grid-small uk-margin-large-top">
+    <div class="uk-width-medium-1-3">
+      <img class="uk-thumbnail uk-align-center uk-hidden-small" src="/static/images/pat.jpg" width="70%" />
+      <img class="uk-thumbnail uk-align-center uk-visible-small" src="/static/images/pat.jpg" width="60%" />
+      <p class="uk-text-center uk-text-contrast uk-text-large">Patrick Joseph</p>
+      <p class="uk-text-center"><a class="uk-button uk-button-primary" href="/contact/">Contact Me</a></p>
+    </div>
+    <hr class="uk-visible-small uk-margin">
+    <div class="uk-width-medium-2-3">
+      <p class="uk-text-contrast uk-text-center">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+    </div>
+  </div>
+</div>
 {% endblock %}
