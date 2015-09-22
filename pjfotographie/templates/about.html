@@ -2,6 +2,7 @@
 {% block title %}Patrick Joseph Photography{% endblock %}
 {% block styles %}
 <link rel="stylesheet" type="text/css" href="/static/css/about.css">
+<link rel="stylesheet" type="text/css" href="/static/css/accordion.gradient.min.css">
 {% endblock %}
 {% block content %}
 <div class="uk-container uk-container-center uk-margin-large">
@@ -15,7 +16,47 @@
     <hr class="uk-visible-small uk-margin">
     <div class="uk-width-medium-2-3">
       <p class="uk-text-contrast uk-text-center">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+      <hr class="uk-margin-large">
+      <p class="uk-text-center uk-text-large uk-contrast"><u>Terms and Conditions</u></p>
+      <div class="uk-accordion uk-margin-right uk-margin-left" data-uk-accordion='{collapse: false}'>
+        <p class="uk-accordion-title">General</p>
+        <div class="uk-accordion-content">
+          <ul class="uk-list uk-list-space">
+            <li class="uk-contrast">Patrick Joseph photography shall have intellectual property rights over all the pictures that are shot.</li>
+            <li class="uk-contrast">If adequate light does not exist at any location, pictures may come out grainy. Most of the pictures that you have seen on our profile were shot where good lighting existed. So if for any reason, your venue does not have adequate lights, please be forewarned that although we will be able to shoot pictures, they may not look as great as you otherwise expected from us. Using flash is not a great solution because it leads to even bad looking pictures (except for its use for taking studio-type posed shots).</li>
+            <li class="uk-contrast">No one should be instructing us during the shoot to shoot this and shoot that – while we don’t say no to anyone, it severely impacts our ability to capture good candid photographs (best is, introduce us to about ten / twelve key people and then get busy with your wedding)</li>
+            <li class="uk-contrast">The above fee does include a Signature Photo-book. The photographer would create a unique album. If you are looking forward to a customized album - extra changers would be applicable as per the album maker.</li>
+            <li class="uk-contrast">Candid photography does not cover traditional posed pictures of the guests – so we request you to please book a traditional studio photographer (they come for about Rs.10,000 a day – and if you want, we can get someone along for you though we don’t have any fixed tie-ups with any studio per say).</li>
+            <li class="uk-contrast">We don’t take up traditional studio videography (but if you want to know how much it costs, the standard Indian fee is anywhere between 15,000 to 20,000 rupees a day for one videographer with HD video-camera who will shoot everything and give to you hours of video in few DVDs).</li>
+          </ul>
+        </div>
+        <p class="uk-accordion-title">Copyright</p>
+        <div class="uk-accordion-content">
+          <ul class="uk-list uk-list-space">
+            <li class="uk-contrast">We take 50% of the amount and the travel charges in advance upfront as retainer and to block our dates. Without this your booking is not guaranteed. We follow a strict first come first serve policy. The remaining amount needs to be paid before the event - preferably 15 days in advance. We really love to keep our deals very clean and feel very embarrassed to send reminders or follow up emails to our clients for payment. Our prices are inclusive of Service Tax and we accept cash and online transfers only.</li>
+            <li class="uk-contrast">In case of a cancellation – we will only refund 20% of the fees.</li>
+            <li class="uk-contrast">Any extra hours of shoot which is over and above what is specified in the package will be charged at an agreed upon rate.</li>
+            <li class="uk-contrast">Feel free to ask us for your customized package. We will provide you the best possible package price including discounts for full cash down payment. We do not negotiate on our final package prices. We believe that there are no discounts for hard work and art should be respected and be paid its due price.</li>
+          </ul>
+        </div>
+        <p class="uk-accordion-title">Payments</p>
+        <div class="uk-accordion-content">
+          <ul class="uk-list uk-list-space">
+            <li class="uk-contrast">We retain copyright to all the images and will use some of the images and video on our website and for promoting our work in magazines and exhibitions. As artists we consider each picture or video as a piece of art created by us and thus would want to show case it.  However, we will not be using it for any commercial purpose. We will not be selling these images or videos and will use the images or videos purely to demonstrate the work that we have done. In cases, where a client does not want the pictures or videos to be displayed anywhere, we will be charging a higher photography and videography fee.</li>
+            <li class="uk-contrast">You are free to make copies of the photographs shot by me and circulate amongst friends and family – however, you shall not have the right to use photographs shot by me for any commercial purposes (such as using them in photo-competitions, selling them etc.)</li>
+          </ul>
+        </div>
+        <p class="uk-accordion-title">Delivery</p>
+        <div class="uk-accordion-content">
+          <ul class="uk-list uk-list-space">
+            <li class="uk-contrast">On completion of the event shoot, the delivery of all the photos will be anywhere between 3 to 4 weeks. However you will receive about 5 to 10 selected photos a week after the event, so that you can publish them online. The signature album will be delivered within 30 to 60 days, as it depends on the Canvera album maker’s schedule.</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 </div>
+{% endblock %}
+{% block scripts %}
+<script type="text/javascript" src="/static/js/accordion.min.js"></script>
 {% endblock %}
