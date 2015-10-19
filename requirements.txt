@@ -3,5 +3,7 @@ Flask-WTF==0.12
 itsdangerous==0.24
 Jinja2==2.8
 MarkupSafe==0.23
+requests==2.5.1
+sparkpost==1.0.0.dev2
 Werkzeug==0.10.4
 WTForms==2.0.2

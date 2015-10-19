@@ -1,6 +1,7 @@
 from flask import Blueprint, render_template, abort
 from jinja2 import TemplateNotFound
 from contact_form import ContactForm
+from pjfotographie import app
 
 simple_page = Blueprint('simple_page', __name__, template_folder='templates')
 
@@ -15,5 +16,6 @@ def show(page):
         if page.find('my-art') != -1:
             return render_template('my-art.html')
         return render_template('%s.html' % page)
-    except TemplateNotFound:
+    except TemplateNotFound as ex:
+        app.logger.error(ex)
         abort(404)
