@@ -1,7 +1,10 @@
+import os
+
 from flask import Blueprint, render_template, abort
 from jinja2 import TemplateNotFound
 from contact_form import ContactForm
 from pjfotographie import app
+from pjfotographie.utils.os_utils import fetch_all_files
 
 simple_page = Blueprint('simple_page', __name__, template_folder='templates')
 
@@ -13,6 +16,10 @@ def show(page):
         if page == 'contact':
             form = ContactForm()
             return render_template('contact.html', form=form)
+        if page == 'wedding':
+            rel_path = app.config.get('WEDDING_THUMBNAILS_DIR')
+            img_list = fetch_all_files(rel_path)
+            return render_template('wedding.html', thumbnail_images=img_list)
         if page.find('my-art') != -1:
             return render_template('my-art.html')
         return render_template('%s.html' % page)

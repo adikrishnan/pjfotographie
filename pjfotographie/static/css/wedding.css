@@ -5,3 +5,7 @@ html{
 h2{
     font-family: 'Titillium Web', sans-serif;
 }
+.uk-thumbnail{
+    height: 170px;
+    margin: 10px;
+}

@@ -10,6 +10,8 @@ class Config(object):
     APP_PORT = int(os.environ.get('PORT', 5000))
     APP_DEBUG = 'False'
     EMAIL_TEMPLATE_LOCATION = '/templates/email_template.j2'
+    WEDDING_THUMBNAILS_DIR = '/static/images/wedding/thumbnails/'
+    ASSORTED_THUMBNAILS_DIR = '/static/images/assorted/thumbnails/'
 
 
 class ProductionConfig(Config):
