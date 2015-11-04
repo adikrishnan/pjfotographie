@@ -1,3 +1,6 @@
+'''
+Entry point for the app.
+'''
 from pjfotographie import app
 import logging
 from logging import StreamHandler

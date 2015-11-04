@@ -1,3 +1,6 @@
+'''
+Flask main app.
+'''
 from flask import Flask, flash, render_template, request
 from os import environ
 
@@ -15,6 +18,9 @@ app.register_blueprint(simple_page)
 
 @app.route('/contact/', methods=['POST'])
 def contact():
+    '''
+    WTForm validation and returns relevant message to user.
+    '''
     form = ContactForm()
     if form.validate_on_submit():
         name = request.form.get('name')

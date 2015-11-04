@@ -1,9 +1,10 @@
-import os
-
+'''
+Blueprint for displaying pages.
+'''
 from flask import Blueprint, render_template, abort
 from jinja2 import TemplateNotFound
-from contact_form import ContactForm
 from pjfotographie import app
+from pjfotographie.views.contact_form import ContactForm
 from pjfotographie.utils.os_utils import fetch_all_files
 
 simple_page = Blueprint('simple_page', __name__, template_folder='templates')
@@ -12,6 +13,11 @@ simple_page = Blueprint('simple_page', __name__, template_folder='templates')
 @simple_page.route('/', defaults={'page': 'home'})
 @simple_page.route('/<page>/')
 def show(page):
+    '''
+    Template function that maps ``page`` to respective templates.
+
+    :arg string page: page as requested by the user.
+    '''
     try:
         if page == 'contact':
             form = ContactForm()
