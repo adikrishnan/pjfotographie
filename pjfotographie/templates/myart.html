@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}Patrick Joseph Photography | My Art {% endblock %}
+{% block styles %}
+<link rel="stylesheet" type="text/css" href="/static/css/myart.css">
+{% endblock %}
+{% block content %}
+<div class="uk-container uk-container-center uk-margin-large">
+  <div class="uk-grid uk-margin-top">
+    <div class="uk-width-1-1">
+      <h2 class="uk-text-center uk-text-contrast">My Art</h2>
+    </div>
+  </div>
+  <div class="uk-flex uk-flex-wrap uk-flex-center uk-margin-large-top">
+    {% for image in thumbnail_images %}
+    <a href="/static/images/assorted/{{ image }}" data-uk-lightbox="{group:'assorted'}"><img class="uk-thumbnail" src="/static/images/assorted/thumbnails/{{ image }}" /></a>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}
+{% block scripts %}
+<script type="text/javascript" src="/static/js/lightbox.min.js"></script>
+{% endblock %}

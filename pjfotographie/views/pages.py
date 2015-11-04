@@ -20,8 +20,10 @@ def show(page):
             rel_path = app.config.get('WEDDING_THUMBNAILS_DIR')
             img_list = fetch_all_files(rel_path)
             return render_template('wedding.html', thumbnail_images=img_list)
-        if page.find('my-art') != -1:
-            return render_template('my-art.html')
+        if page == 'myart':
+            rel_path = app.config.get('ASSORTED_THUMBNAILS_DIR')
+            img_list = fetch_all_files(rel_path)
+            return render_template('myart.html', thumbnail_images=img_list)
         return render_template('%s.html' % page)
     except TemplateNotFound as ex:
         app.logger.error(ex)
