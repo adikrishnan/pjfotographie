@@ -48,3 +48,13 @@ html{
 .site-nav-small-sub-item{
     margin-left: 10px;
 }
+p>a{
+    cursor: pointer;
+    text-decoration: none;
+    color: #ffffff;
+}
+p>a:hover, p>a:focus{
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+}
