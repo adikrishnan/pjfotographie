@@ -5,11 +5,3 @@
     background: url('/static/images/cover.jpg') center center no-repeat;
     background-size: cover;
 }
-#wedding{
-    background: url('/static/images/cover2.jpg') center center no-repeat;
-    background-size: cover;
-}
-#pre-wedding{
-    background: url('/static/images/cover1.jpg') center center no-repeat;
-    background-size: cover;
-}
